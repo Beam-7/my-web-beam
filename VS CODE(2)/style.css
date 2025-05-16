@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddadde;
+  color: white;
+  font-family: "Love Ya Like A Sister", cursive;
+}
+
+.happy__birthday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  background: #f4f4f400;
+  text-align: center;
+  padding: 20px;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cake {
+  font-size: 5rem;
+  margin: 10px 0;
+}
+
+.balloons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.balloon {
+  font-size: 2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.blue { color: #00c3ff; }
+.green { color: #1ae2e2; }
+.yellow { color: #ffff00; }
+.pink { color: #ffc7ff; }
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #84ceff;
+  font-size: 3rem;
+}
+ 
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cake {
+  font-size: 3rem;
+  margin: 10px 0;
+  animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.balloon {
+  font-size: 2rem;
+  animation: float 5s ease-in-out infinite;
+}
+
+
+
+.cute-btn {
+  background-color: #bde7ff;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffffff;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.cute-btn:hover {
+  background-color: #88c5ff;
+  transform: scale(1.05);
+}
+
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #465b7a; /* พื้นหลังเดิมของคุณ */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
